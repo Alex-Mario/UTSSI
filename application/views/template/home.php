@@ -18,7 +18,7 @@
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <p class="card-text"><small class="text-muted">Brian Maxwell Ketaren | 04/08/2022</small></p>
-                    <a href="<?= BASE_URL("Berita") ?>" class="btn btn-dark">Go somewhere</a>
+                    <a href="<?= BASE_URL("Berita/1") ?>" class="btn btn-dark">Go somewhere</a>
                 </div>
             </div>
         </div>
