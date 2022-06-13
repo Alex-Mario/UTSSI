@@ -1,31 +1,26 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Login</title>
-        <link rel="stylesheet"type="text/css" href="<?php echo base_url('assets/css/login&registrasi.css');?>">
+<main class="form-signin container">
+    <div class="d-flex justify-content-center ">
+        <form class="col-6 border ps-2 pe-2 pt-2" style="height:70vh;" method="post" action="<?= base_url('login/login_action'); ?>">
+            <center>
+                <img class="" src="https://cdn-icons-png.flaticon.com/512/3313/3313480.png" alt="" width="72" height="57">
+                <h3>Login</h3>
+            </center>
+            <div class="mb-3 ">
+                <label for="exampleInputEmail1" class="form-label">Username</label>
+                <input type="text" class="form-control" name="username">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" name="password">
+            </div>
+            <button type="submit" name="submit" value="Login" class="btn btn-primary">Submit</button>
+            <br>
+            <br>
 
-        <link rel="icon" href="">
-    </head>
+            <p>Belum Punya Akun? Daftar Sekarang</p>
+            <a type="submit" name="submit" value="Login" class="btn btn-primary" href="<?= base_url('login/register') ?>">Daftar</a>
 
-    <body>
+        </form>
 
-        <div class="container">
-
-          <h1>Login</h1>
-
-            <form action="" method="post">
-                <label for="username">Username</label><br>
-                <input type="text" name="username" id="username"><br>
-                <label for="password">Password</label><br>
-                <input type="password" name="password" id="password"><br>
-                <button type="submit" name="login">Log in</button>
-            </form>
-         
-            <p><a href="index.php">Kembali lagi kehalaman utama</a></p>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
-    <script src="<?php echo base_url('assets/js/script.js');?>"></script>
-
-    </body>
-</html>
+    </div>
+</main>

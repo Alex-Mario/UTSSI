@@ -1,5 +1,7 @@
 <div class="container marketing">
-
+    <div class="p-4 p-md-5 mb-4 text-white rounded text-center align-items-center" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url(https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80); background-size: cover; background-position: center; height:50vh">
+        <h1 class="">Budi Mulia</h1>
+    </div>
     <!-- Three columns of text below the carousel -->
     <div class="row">
         <div class="col-lg-4 ">
