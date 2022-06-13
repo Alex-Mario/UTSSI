@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2022 at 08:26 AM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.6
+-- Generation Time: Jun 13, 2022 at 10:04 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -42,7 +42,10 @@ CREATE TABLE `berita` (
 --
 
 INSERT INTO `berita` (`id_berita`, `judul`, `isi`, `gambar`, `tgl`, `sinopsis`, `id_penulis`) VALUES
-(11, 'fdsa', '<p>sdafsadf</p>\r\n', 'WhatsApp_Image_2022-06-02_at_7_59_26_PM1.jpeg', '2022-06-13', '<p>sdafsdaf</p>\r\n', 2);
+(11, 'Daftar Siswa Pemenang Lomba Tingkat Provinsi', '<h1><strong>Ini dia kumpulan siswa kita yang berhasil menjuarai perlombaan dibidang masing masing</strong></h1>\r\n\r\n<h2>&nbsp;</h2>\r\n\r\n<h2><strong>Lomba Menggambar tingkat Provinsi :</strong></h2>\r\n\r\n<h2><strong>1. Alex Mario Simanjuntak</strong></h2>\r\n\r\n<h2>&nbsp;</h2>\r\n\r\n<h2><strong>Lomba Fotografi tingkat Provinsi :</strong></h2>\r\n\r\n<h2><strong>1. Brian Maxwell Ketaren</strong></h2>\r\n\r\n<h2>&nbsp;</h2>\r\n\r\n<h2><strong>Lomba Berenang tingkat Provinsi</strong></h2>\r\n\r\n<h2><strong>1. Daniel Tambunan</strong></h2>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2><strong>Selamat kepada anak anak kita yang sudah mengharumkan nama sekolah.</strong></h2>\r\n', '2.jpg', '2022-06-13', '<h3><strong>Siswa Berprestasi</strong></h3>\r\n', 2),
+(13, 'Kasus Pembunuhan di Sekolah sebelah', '<h1><strong>Kasus Pembunuhan</strong></h1>\r\n\r\n<p>Banyaknya tugas yang diberikan oleh sekolah dapat membebankan pikiran para murid, tetapi tenang saja.</p>\r\n\r\n<p>Sekolah Budi Mulia memberikan ketenangan kepada murid muridnya.</p>\r\n\r\n<p>Maka dari itu tidak akan ada kasus pembunuhan dikarenakan banyaknya tugas yang diberikan kepada murid murid</p>\r\n\r\n<p>- Stres</p>\r\n\r\n<p>+ Kreativitas</p>\r\n\r\n<p>+ Motivasi Belajar</p>\r\n\r\n<p>+ Pengembangan Skill</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Tunggu apa lagi?</p>\r\n\r\n<p>Ayo Join Sekolah Budi Mulia</p>\r\n\r\n<p>Tututututu tu tu</p>\r\n', '11.jpg', '2022-06-13', '<h3><strong>Kasus Pembunuhan</strong></h3>\r\n', 2),
+(14, 'PENTAS SENI', '<h2>Sekolah Budi Mulia adalah sekolah yang menampung dan berusaha dalam mengembangkan bakat-bakat siswa dalam bentuk seni yaitu, bernyanyi, drama, bermain alat musik, dan lain-lain.</h2>\r\n\r\n<h2>Oleh karena itu, Sekolah Budi Mulia mengadakan pentas seni yang akan diadakan sekali setahun. Pentas seni akan dilaksanakan selama 3 hari dan terbuka untuk umum.&nbsp;</h2>\r\n\r\n<h2>Kamu dapat mengajak keluara atau sahabatmu untuk mengikuti kegiatan ini dan tentu saja melihat penampilanmu.</h2>\r\n\r\n<h2>Kamu juga dapat melihat banyak hal lain, lho. Misalnya kegiatan lain yang dilakukan ditiap kelas seperti kafe, rumah hantu, dan lain-lain. Pentas seni nantinya akan diakhiri dengan konser.</h2>\r\n', '3.jpg', '2022-06-13', '<h2><strong>PENTAS SENI SEKOLAH BUDI MULIA</strong></h2>\r\n', 3),
+(15, 'Laboratorium Sekolah', '<h2>Sekolah Budi Mulia memberikan fasilitas terbaik kepada siswa-siswanya. Baik dari ruang kelas yang nyaman dan bersih, sekolah juga memberikan fasilitas laboratorium.<br />\r\n<br />\r\nTerdapat lab IPA dan lab Komputer.<br />\r\n<br />\r\nSiswa dapat menggunakan lab tersebut untuk belajar dan menambah pengetahuan. Namun tentu saja harus dalam pengawasan guru ata pegawai.<br />\r\n<br />\r\nFasilitas di lab IPA juga cukup lengkap, jadi, siswa dapat dengan mudah menggunakannya.<br />\r\n<br />\r\nMeskipun fasilitas tadi diberikan kepada siswa, sekolah juga menghimbau agar dalam penggunaan lab tersebut harus melakukan hal yang berguna dan tidak diperbolehkan melakukan penyalahgunaan.</h2>\r\n', '4.jpg', '2022-06-13', '<h2><strong>Laboratorium Sekolah Budi Mulia</strong></h2>\r\n', 3);
 
 -- --------------------------------------------------------
 
@@ -82,7 +85,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `username`, `password`) VALUES
-(8, 'brian', 'cbd44f8b5b48a51f7dab98abcdf45d4e');
+(8, 'brian', 'cbd44f8b5b48a51f7dab98abcdf45d4e'),
+(9, 'admin', '21232f297a57a5a743894a0e4a801fc3');
 
 --
 -- Indexes for dumped tables
@@ -115,7 +119,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `berita`
 --
 ALTER TABLE `berita`
-  MODIFY `id_berita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_berita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `penulis`
@@ -127,7 +131,7 @@ ALTER TABLE `penulis`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Constraints for dumped tables
