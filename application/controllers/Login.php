@@ -17,6 +17,18 @@ class Login extends CI_Controller
 
     function login_action()
     {
+        $this->form_validation->set_rules('username','username', 'required');
+        $this->form_validation->set_rules('password','password', 'required');
+
+        if($this->form_validation->run() != true)
+        {
+            $this->load->view('template/header');
+            $this->load->view('template/login');
+            $this->load->view('template/footer');
+        }
+
+        else{
+
         $username = $this->input->post('username');
         $password = $this->input->post('password');
         $where = array(
@@ -31,11 +43,17 @@ class Login extends CI_Controller
             );
             $this->session->set_userdata($data_session);
             redirect(base_url("admin"));
-        } else {
+        } 
+
+        else
+        {
             echo "<script>alert('Username atau password salah')
             document.location.href = '" . base_url('login') . "'
             </script>";
         }
+
+        }
+        
     }
     function logout()
     {
@@ -50,6 +68,18 @@ class Login extends CI_Controller
     }
     public function register_data()
     {
+        $this->form_validation->set_rules('username','username', 'required');
+        $this->form_validation->set_rules('password','password', 'required');
+
+        if($this->form_validation->run() != true)
+        {
+            $this->load->view('template/header');
+            $this->load->view('template/register');
+            $this->load->view('template/footer');
+        }
+
+        else{
+
         $data = array(
             'id_user' => null,
             'username' => $this->input->post('username'),
@@ -61,10 +91,15 @@ class Login extends CI_Controller
             alert('Data Berhasil Ditambah')
             document.location.href = '" . base_url('login') . "';
             </script>";
-        } else {
+        } 
+
+        else {
             echo "<script>alert('Username Sudah Pernah Dipakai')
             document.location.href = '" . base_url('login/register') . "';
             </script>";
         }
+        }
     }
+
+    
 }
