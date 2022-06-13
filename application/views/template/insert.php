@@ -11,7 +11,7 @@
             </select>
             <input type="text" name="judul" class="input-control" placeholder="Judul Berita" required>
             <input type="date" name="tgl" class="input-control" placeholder="Tanggal" required>
-            <input type="file" name="gambar" class="input-control" required>
+            <input type="file" name="gambar" class="form-control" required>
             <br>
             <h6>Sinopsis</h6>
             <textarea name="sinopsis" class="input-control" placeholder="Sinopsis"></textarea>

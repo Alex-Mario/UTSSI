@@ -10,7 +10,7 @@ class Berita_model extends CI_Model
 
     public function detailBerita($where)
     {
-        $data = $this->db->query("SELECT id_berita, judul, gambar, tgl, isi, penulis.nama FROM berita join penulis on berita.id_penulis = penulis.id_penulis where id_berita = '$where'");
+        $data = $this->db->query("SELECT id_berita, judul, gambar, tgl, isi, penulis.nama, penulis.foto FROM berita join penulis on berita.id_penulis = penulis.id_penulis where id_berita = '$where'");
         return $data->result_array();
     }
     public function getBeritaAdmin()

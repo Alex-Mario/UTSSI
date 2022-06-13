@@ -13,9 +13,6 @@
                 <label for="exampleInputPassword1" class="form-label">Password</label>
                 <input type="password" class="form-control" name="password">
             </div>
-            
-            <?php echo validation_errors(); ?>
-            
             <button type="submit" name="submit" value="Login" class="btn btn-primary">Submit</button>
             <br>
             <br>

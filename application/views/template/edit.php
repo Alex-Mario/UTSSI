@@ -17,7 +17,10 @@
                     <input type="date" name="tgl" class="input-control" placeholder="Tanggal" value="<?= $berita['tgl'] ?>" required>
                     <img src="<?= base_url() ?>assets/gambar/<?= $berita['gambar'] ?>" alt="" width="150px" height="150px" style="border-radius:50%;">
                     <input type="hidden" name="gambarlama" value="<?= $berita['gambar'] ?>" class="input-control">
-                    <input type="file" name="gambar" class="input-control">
+                    <br>
+                    <br>
+
+                    <input type="file" name="gambar" class="form-control">
                     <br>
                     <h6>Sinopsis</h6>
                     <textarea name="sinopsis" class="input-control" placeholder="Sinopsis"><?= $berita['sinopsis'] ?></textarea>
