@@ -10,7 +10,7 @@
 <section class="container">
     <div class="card mb-3">
         <?php foreach ($data as $berita) { ?>
-            <div class="row">
+            <div class="row mb-4">
                 <div class="col-3">
                     <img src="<?= base_url() ?>assets/gambar/<?= $berita['gambar'] ?>" class="img-fluid h-100 w-100">
                 </div>
